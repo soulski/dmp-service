@@ -1,0 +1,30 @@
+version: '2'
+
+services:
+    ns1:
+        image: service
+        network_mode: dmp
+        environment:
+            SERVICE_NS: 'ns1'
+            SERVICE_TYPE: 'client'
+
+    ns2:
+        image: service
+        network_mode: dmp
+        environment:
+            SERVICE_NS: 'ns2'
+            SERVICE_TYPE: 'server'
+
+    ns3:
+        image: service
+        network_mode: dmp
+        environment:
+            SERVICE_NS: 'ns3'
+            SERVICE_TYPE: 'server'
+
+    ns4:
+        image: service
+        network_mode: dmp
+        environment:
+            SERVICE_NS: 'ns4'
+            SERVICE_TYPE: 'server'
